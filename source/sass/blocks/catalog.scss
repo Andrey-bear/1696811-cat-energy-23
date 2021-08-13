@@ -1,0 +1,69 @@
+.products__item {
+  border-top: 1px solid $border-light;
+}
+
+.products__item:last-child {
+  border-bottom: 1px solid $border-light;
+}
+
+.catalog__title {
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: none;
+}
+
+.catalog__list {
+  list-style: none;
+}
+
+.card__title {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-text-title;
+}
+
+.card__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: none;
+  color: $paragraph-light;
+}
+
+.card {
+  .card__title {
+    &--add {
+      color: $accent-text;
+    }
+  }
+}
+
+.card__text {
+  &--add {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: none;
+    color: $paragraph-light;
+  }
+}
+
+.card__button {
+  &--add {
+    color: $main-background;
+    background-color: $background-light;
+    &:hover {
+      background: $bottomcatalog-hover;
+    }
+  }
+}
+
+.card__button:hover {
+   &--add {
+     background: $bottomcatalog-hover;
+   }
+}

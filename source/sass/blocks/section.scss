@@ -1,0 +1,126 @@
+.container__title {
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: none;
+}
+
+.container__text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.fieldset__list {
+  list-style: none;
+}
+
+.fieldset__item {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $paragraph-light;
+}
+
+.fieldset__input {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $paragraph-light;
+  text-transform: uppercase;
+  border: 1px solid $border-input;
+    &:hover {
+      border: 1px solid $radio-border;
+  }
+}
+
+.fieldset__input:focus {
+  border: 1px solid $paragraph-light;
+}
+
+.fieldset__input:invalid {
+  border: 1px solid $input-error;
+}
+
+.fieldset__label--radio {
+  color: $color-text-title;
+}
+
+.fieldset__input--radio + label::before {
+  content: "";
+  position: absolute;
+  left: 80px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../img/radiobutton-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.fieldset__input--radio:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 80px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../img/radiobutton-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.fieldset__title {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+}
+
+.fieldset__textarea {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-style: normal;
+  border: 1px solid $border-light;
+    &:hover {
+      border: 1px solid $radio-border;
+   }
+}
+
+.fieldset__label--checkbox {
+  color: $color-text;
+}
+
+.fieldset__input--checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: 80px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.fieldset__input--checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 80px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../img/tick.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.form__button {
+  border: none;
+}
+
+.form__necessarily {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: none;
+  color: $color-text;
+}

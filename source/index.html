@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -33,13 +34,13 @@
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+            <a class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="site-list__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -49,20 +50,31 @@
         <h1 class="visually-hidden">Cat energy</h1>
         <h2 class="program__title">Функциональное питание для котов</h2>
         <p class="program__text">Занялся собой? Займись котом!</p>
+        <img class="program__imege" src="img/index-can-mobile.png" width="280" height="270" alt="Product">
         <a class="program__button button" href="form.html">Подбор программы</a>
       </section>
       <section class="categories">
         <h2 class="visually-hidden">Список программ</h2>
         <ul class="categories__list">
-          <li class="categories__item">
+          <li class="categories__item slimming">
             <h3 class="categories__title">Похудение</h3>
             <p class="categories__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="categories__link" href="">Каталог slim</a>
+            <a class="categories__link" href="">Каталог slim
+              <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
+                <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
+              </svg>
+            </a>
           </li>
-          <li class="categories__item">
+          <li class="categories__item weight-gain">
             <h3 class="categories__title">Набор массы</h3>
             <p class="categories__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="categories__link" href="">Каталог pro</a>
+            <a class="categories__link" href="">Каталог pro
+              <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
+                <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
+              </svg>
+            </a>
           </li>
         </ul>
       </section>
@@ -99,18 +111,19 @@
           </div>
         </dl>
         <p class="before-after__expenses">Затраты на питание: <span class="before-after__value">15 000 руб.</span></p>
-        <div class="before-after__button button">
-          <button class="button__switch button__switch--before" type="button">Было</button>
-          <button class="button__switch button__switch--after" type="button">Стало</button>
+        <div class="before-after__button switch">
+          <img src="img/before-cat.png" width="311" height="232" alt="before">
+          <button class="switch__button switch__button--before" type="button">Было</button>
+          <button class="switch__button switch__button--after" type="button">Стало</button>
         </div>
       </section>
       <section class="contacts">
-        <h2>Приглашаем к сотрудничеству дилеров!</h2>
-        <div>
-          <p>ул. Большая Конюшенная, д. 19/8</p>
-          <p>Санкт-Петербург</p>
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <div class="contacts__adress">
+          <p class="contacts__adress-text contacts__adress-text--street">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="contacts__adress-text contacts__adress-text--city">Санкт-Петербург</p>
         </div>
-        <img src="img/map.jpg" width="320" height="362" alt="Карта">
+        <img class="contacts__image" src="img/map.jpg" width="320" height="362" alt="Карта">
       </section>
     </main>
     <footer class="page-footer">
@@ -154,8 +167,8 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#" aria-label="facebook">
-              <svg width="15" height="29" viewBox="0 0 15 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.0001 0.749756H10.5001C8.95299 0.749756 7.46925 1.45999 6.37529 2.72423C5.28133 3.98846 4.66675 5.70313 4.66675 7.49103V11.5358H1.16675V16.9288H4.66675V27.7148H9.33342V16.9288H12.8334L14.0001 11.5358H9.33342V7.49103C9.33342 7.13345 9.45633 6.79051 9.67512 6.53767C9.89392 6.28482 10.1907 6.14277 10.5001 6.14277H14.0001V0.749756Z" stroke="#666666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+              <svg width="28" height="33" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 2.75H17.5C15.9529 2.75 14.4692 3.46024 13.3752 4.72447C12.2813 5.98871 11.6667 7.70337 11.6667 9.49127V13.536H8.16669V18.929H11.6667V29.7151H16.3334V18.929H19.8334L21 13.536H16.3334V9.49127C16.3334 9.13369 16.4563 8.79076 16.6751 8.53791C16.8939 8.28506 17.1906 8.14302 17.5 8.14302H21V2.75Z" stroke="#666666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </a>
           </li>

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -28,13 +29,13 @@
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a>Каталог продукции</a>
+            <a class="site-list__link">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="site-list__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -191,10 +192,10 @@
             <a class="card__button button" href="#">Заказать</a>
           </li>
           <li class="products__item card card--add">
-            <img class="card__icon" src="img/plus-add.svg" alt="Show all products">
-            <h2 class="card__title">Показать еще 100500 товаров</h2>
-            <p class="card__text">На самом деле вкусо гораздо больше!</p>
-            <a class="card__button button" href="#">показать все</a>
+            <img class="card__icon card__icon--add" src="img/plus.svg" alt="Show all products">
+            <h2 class="card__title card__title--add">Показать еще 100500 товаров</h2>
+            <p class="card__text card__text--add">На самом деле вкусо гораздо больше!</p>
+            <a class="card__button button card__button--add" href="#">показать все</a>
           </li>
         </ul>
       </section>
@@ -243,14 +244,15 @@
           </li>
         </ul>
         <div class="present">
+          <img class="present__imege" src="img/cat-green.jpg" width="280" height="289" alt="cat-green">
           <p class="present__text">Закажите все и получите чехол для кота в подарок!</p>
         </div>
       </section>
       <section class="contacts">
         <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <div class="contacts-adress">
-          <p class="contacts-adress__street">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="contacts-adress__city">Санкт-Петербург</p>
+        <div class="contacts__adress">
+          <p class="contacts__adress-text contacts__adress-text--street">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="contacts__adress-text contacts__adress-text--city">Санкт-Петербург</p>
         </div>
         <img class="contacts__image" src="img/map.jpg" width="320" height="362" alt="Карта">
       </section>
