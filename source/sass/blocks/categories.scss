@@ -6,13 +6,13 @@
   background-color: $background-light;
 }
 
-.categories__title {
+.category__title {
   font-style: normal;
   font-size: 24px;
   line-height: 37px;
 }
 
-.categories__text {
+.category__text {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -21,26 +21,30 @@
   color: $paragraph-light;
 }
 
-.slimming {
+.category-slimming {
   background-image: url("../../img/slimming.svg");
   background-repeat: no-repeat;
   background-position: 30% 10%;
 }
 
-.weight-gain {
+.category-weight-gain {
   background-image: url("../../img/weight-gain.svg");
   background-repeat: no-repeat;
   background-position: 30% 10%;
 }
 
-.categories__link {
+.category__link {
   color: $color-text;
 }
 
-.categories__link:active {
+.category__link:active {
   color: $color-text-active;
 }
 
-.categories__link:active svg path {
+.category__link:active svg path {
   fill: $color-text-active;
+}
+
+.category__link:active svg line {
+  stroke: $color-text-active;
 }

@@ -1,0 +1,162 @@
+.container__title {
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: none;
+}
+
+.container__text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.fieldset__label--radio {
+  color: $color-text-title;
+  cursor: pointer;
+}
+
+.fieldset__input--radio + label::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 80px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $radio-border;
+  border-radius: 50%;
+}
+
+.fieldset__input--radio:hover + label::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 80px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $radio-borderhover;
+  border-radius: 50%;
+}
+
+.fieldset__label--checkboxx {
+  cursor: pointer;
+}
+
+.fieldset__input--radio:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 89px;
+  width: 13.5px;
+  height: 13.5px;
+  background-color: $color-bottom;
+  border-radius: 50%;
+}
+
+.fieldset__input--radio:active + label::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 80px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $radio-borderhover-active;
+  border-radius: 50%;
+}
+
+.fieldset__input--radio:checked:active + label::after {
+  content: "";
+  position: absolute;
+  left: 89px;
+  width: 13.5px;
+  height: 13.5px;
+  background-color: $color-bottom-active;
+  border-radius: 50%;
+}
+
+.fieldset__title {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+}
+
+.fieldset__textarea {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-style: normal;
+  border: 1px solid $border-light;
+
+  &:hover {
+    border: 1px solid $radio-border;
+  }
+}
+
+.fieldset__label--checkbox {
+  color: $color-text;
+}
+
+.fieldset__input--checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 80px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $radio-border;
+}
+
+.fieldset__input--checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 85px;
+  width: 26px;
+  height: 26px;
+  background-image: url("../../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.fieldset__input--checkbox:hover + label::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 80px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $radio-borderhover;
+}
+
+.fieldset__input--checkbox:active + label::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 80px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $radio-borderhover-active;
+}
+
+.fieldset__input--checkbox:checked:active + label::after {
+  top: -5px;
+  left: 85px;
+  width: 26px;
+  height: 26px;
+  background-image: url("../../img/tick-active.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.form__button {
+  border: none;
+}
+
+.form__necessarily {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: none;
+  color: $color-text;
+}

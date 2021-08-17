@@ -52,18 +52,18 @@
   }
 }
 
-.card__button {
-  &--add {
-    color: $main-background;
+.button {
+  &--muted {
+    color: $paragraph-light;
     background-color: $background-light;
-    &:hover {
-      background: $bottomcatalog-hover;
-    }
   }
-}
 
-.card__button:hover {
-   &--add {
-     background: $bottomcatalog-hover;
-   }
+  &--muted:hover {
+    background-color: $bottomcatalog-hover;
+  }
+
+  &--muted:active {
+    color: $paragraph-light-active;
+    background-color: $bottomcatalog-hover;
+  }
 }

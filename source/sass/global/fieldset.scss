@@ -3,3 +3,39 @@
   margin: 0;
   border: none;
 }
+
+.fieldset__list {
+  list-style: none;
+}
+
+.fieldset__item {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 20px;
+  color: $paragraph-light;
+  position: relative;
+  display: block;
+}
+
+.fieldset__input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $paragraph-light;
+  text-transform: uppercase;
+  border: 1px solid $border-input;
+
+  &:hover {
+    border: 1px solid $radio-border;
+  }
+
+  &:focus {
+    border: 1px solid $paragraph-light;
+  }
+
+  &:invalid {
+    border: 1px solid $input-error;
+  }
+}
