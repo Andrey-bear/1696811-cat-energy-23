@@ -1,0 +1,20 @@
+.program {
+  color: $main-background;
+  background: $background-light;
+  background-image: url("../../img/background-cat.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.program__title {
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.program__text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}

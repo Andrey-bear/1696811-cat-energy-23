@@ -1,0 +1,50 @@
+.categories__list {
+  list-style: none;
+}
+
+.categories__item {
+  background-color: $background-light;
+}
+
+.category__title {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.category__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: none;
+  color: $paragraph-light;
+}
+
+.category-slimming {
+  background-image: url("../../img/slimming.svg");
+  background-repeat: no-repeat;
+  background-position: 30% 10%;
+}
+
+.category-weight-gain {
+  background-image: url("../../img/weight-gain.svg");
+  background-repeat: no-repeat;
+  background-position: 30% 10%;
+}
+
+.category__link {
+  color: $color-text;
+}
+
+.category__link:active {
+  color: $color-text-active;
+}
+
+.category__link:active svg path {
+  fill: $color-text-active;
+}
+
+.category__link:active svg line {
+  stroke: $color-text-active;
+}

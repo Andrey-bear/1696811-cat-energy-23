@@ -1,0 +1,14 @@
+.present {
+  width: 280px;
+  height: 289px;
+  background-image: url("../../img/cat-green.jpg");
+}
+
+.present__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: none;
+  color: $main-background;
+}
