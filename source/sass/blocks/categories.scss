@@ -1,18 +1,35 @@
+.categories {
+  text-align: left;
+}
+
 .categories__list {
+  margin: 0;
+  padding: 10px 22px 5px 22px;
   list-style: none;
 }
 
 .categories__item {
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   background-color: $background-light;
 }
 
 .category__title {
+  padding-left: 72px;
+  padding-bottom: 20px;
+  margin: 5px 0 0;
   font-style: normal;
   font-size: 24px;
   line-height: 37px;
+  text-align: left;
 }
 
 .category__text {
+  margin: 0 0 15px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -24,17 +41,19 @@
 .category-slimming {
   background-image: url("../../img/slimming.svg");
   background-repeat: no-repeat;
-  background-position: 30% 10%;
+  background-position: 10% 10%;
 }
 
 .category-weight-gain {
   background-image: url("../../img/weight-gain.svg");
   background-repeat: no-repeat;
-  background-position: 30% 10%;
+  background-position: 6% 10%;
 }
 
 .category__link {
+  padding-top: 15px;
   color: $color-text;
+  border-top: 1px solid $border-darker;
 }
 
 .category__link:active {
@@ -47,4 +66,96 @@
 
 .category__link:active svg line {
   stroke: $color-text-active;
+}
+
+.category__image {
+  padding-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .categories__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .categories__item {
+    padding: 75px 50px 62px 53px;
+    background-color: $background-light;
+  }
+
+  .category__title {
+    padding: 0;
+    margin: 0 0 24px;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+  }
+
+  .category__text {
+    padding-right: 265px;
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .category-slimming {
+    background-image: url("../../img/slimming-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: 88% 45%;
+  }
+
+  .category-weight-gain {
+    background-image: url("../../img/weight-gain-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: 92% 58%;
+  }
+
+  .category__link {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    border-top: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .categories__item {
+    margin: 0 0 90px;
+    padding: 50px 50px 62px 53px;
+    width: 570px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .category-slimming {
+    background-image: url("../../img/slimming-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 10% 10%;
+  }
+
+  .category-weight-gain {
+    background-image: url("../../img/weight-gain-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 7% 10%;
+  }
+
+  .category__title {
+    margin: 0 0 80px;
+    text-align: center;
+  }
+
+  .category__text {
+    padding-right: 75px;
+  }
 }

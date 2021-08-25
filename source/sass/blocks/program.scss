@@ -1,20 +1,122 @@
 .program {
+  margin-bottom: 20px;
+  max-width: 320px;
   color: $main-background;
-  background: $background-light;
+}
+
+.program::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 278px;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url("../../img/background-cat.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position-x: 50%;
 }
 
 .program__title {
+  margin-bottom: 20px;
   font-style: normal;
   font-size: 36px;
   line-height: 36px;
+  text-transform: none;
 }
 
 .program__text {
+  margin-bottom: 30px;
   font-style: normal;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    padding-left: 87px;
+    margin: 0;
+    margin-bottom: 20px;
+    max-width: 520px;
+    color: $color-text;
+    text-align: left;
+  }
+
+  .program::before {
+    display: none;
+  }
+
+  .program__title {
+    margin: 0 0 41px;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: none;
+    color: $color-text;
+  }
+
+  .program__text {
+    margin: 0 0 20px;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .program__imege {
+    margin-left: -80px;
+  }
+
+  .program__button {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px 40px;
+    position: absolute;
+    top: 356px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    margin-bottom: 480px;
+  }
+
+  .program::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 877px;
+    width: 720px;
+    height: 694px;
+    background-image: url("../../img/background-cat-tablet.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .program__text {
+    margin: 0 0 70px;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .program__imege {
+    position: absolute;
+    top: 115px;
+    left: 715px;
+    margin: auto;
+  }
+
+  .program__button {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 30px;
+    padding: 10px 40px;
+    position: absolute;
+    top: 356px;
+  }
 }
