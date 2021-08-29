@@ -1,7 +1,5 @@
 .page {
-  width: 320px;
   height: 100%;
-  margin: auto;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -9,10 +7,8 @@
 }
 
 .page-body {
-  min-width: 320px;
   min-height: 100%;
   margin: 0;
-  padding: 0;
   text-transform: uppercase;
 }
 
@@ -33,10 +29,13 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 @media (min-width: $tablet-width) {
   .page {
-    width: 768px;
-    height: 100%;
     margin: 0 auto;
     font-family: "Oswald", "Arial", sans-serif;
     font-style: normal;
@@ -49,16 +48,16 @@ a {
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
     margin: 0;
-    padding: 20px 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page {
-    width: 1440px;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .page-body {
@@ -68,8 +67,4 @@ a {
     margin: 0;
     padding: 0;
   }
-
-  // .container {
-  //   padding: 53px 110px;
-  // }
 }

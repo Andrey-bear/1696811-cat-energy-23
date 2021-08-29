@@ -3,13 +3,13 @@
 }
 
 .categories__list {
+  padding: 0;
   margin: 0;
-  padding: 10px 22px 5px 22px;
   list-style: none;
 }
 
 .categories__item {
-  padding: 20px;
+  padding: 21px 22px 18px 22px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -20,8 +20,8 @@
 
 .category__title {
   padding-left: 72px;
-  padding-bottom: 20px;
-  margin: 5px 0 0;
+  padding-bottom: 5px;
+  margin: 0 0 22px;
   font-style: normal;
   font-size: 24px;
   line-height: 37px;
@@ -66,10 +66,6 @@
 
 .category__link:active svg line {
   stroke: $color-text-active;
-}
-
-.category__image {
-  padding-left: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -130,8 +126,8 @@
 
   .categories__item {
     margin: 0 0 90px;
-    padding: 50px 50px 62px 53px;
-    width: 570px;
+    padding: 50px 5px 43px 53px;
+    width: 515px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -156,6 +152,6 @@
   }
 
   .category__text {
-    padding-right: 75px;
+    padding-right: 40px;
   }
 }

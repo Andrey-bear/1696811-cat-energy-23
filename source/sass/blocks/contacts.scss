@@ -1,10 +1,5 @@
-.contacts {
-  margin: 0 0 -3px;
-  padding: 0 20px;
-}
-
 .contacts__cooperation {
-  padding: 20px 0;
+  margin-bottom: 26px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -37,22 +32,18 @@
 }
 
 .contacts__image {
-  margin-right: -20px;
-  margin-left: -20px;
+  position: relative;
+  top: 3px;
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
-    margin: 0;
-    padding: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
   }
 
   .contacts__cooperation {
-    width: 660px;
-    padding: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -85,17 +76,20 @@
   }
 
   .contacts__image {
-    margin: 0 -30px;
+    position: relative;
+    top: 5px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts__cooperation {
-    position: relative;
-    left: 80px;
-    top: 299px;
-    width: 569px;
+    margin: 0;
     justify-content: space-evenly;
     background-color: $main-background;
+    position: relative;
+    left: 100px;
+    top: 299px;
+    width: 569px;
+    z-index: 2;
   }
 }
