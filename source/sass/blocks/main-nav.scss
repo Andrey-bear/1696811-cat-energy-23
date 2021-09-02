@@ -13,6 +13,12 @@
   margin-right: -20px;
   border-top: 1px solid $border-light;
 }
+// width: 100vw;
+// position: relative;
+// left: 50%;
+// right: 50%;
+// margin-left: -50vw;
+// margin-right: -50vw;
 
 .site-list__item:last-child {
   border-bottom: 1px solid $border-light;
@@ -49,14 +55,15 @@
     margin: 0 -15px;
     padding: 10px 15px;
     border: none;
+    position: relative;
   }
 
   .site-list__item--active::after {
     content: "";
     position: absolute;
-    top: 70px;
-    left: 298px;
-    width: 9%;
+    top: 36px;
+    left: 15px;
+    width: 70%;
     height: 2px;
     background-color: $color-bottom;
   }
@@ -84,6 +91,17 @@
     line-height: 30px;
     text-align: center;
   }
+
+  .site-list__item--active::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    width: 73%;
+    height: 2px;
+    background-color: $main-background;
+  }
+
 
   .site-list__link {
     color: $main-background;
