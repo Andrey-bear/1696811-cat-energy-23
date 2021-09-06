@@ -1,11 +1,3 @@
-.products__item {
-  border-top: 1px solid $border-light;
-}
-
-.products__item:last-child {
-  border-bottom: 1px solid $border-light;
-}
-
 .catalog__title {
   font-style: normal;
   font-size: 36px;
@@ -14,7 +6,40 @@
 }
 
 .catalog__list {
+  padding: 0;
+  margin: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.products__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  border-top: 1px solid $border-light;
+}
+
+.products__item:last-child {
+  margin: 0 0 30px;
+  border-bottom: 1px solid $border-light;
+}
+
+.card__link {
+  width: 125px;
+  padding-top: 30px;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 140px;
+  padding-top: 20px;
+  margin: 0 0 20px;
 }
 
 .card__title {
@@ -22,6 +47,9 @@
   font-size: 16px;
   line-height: 20px;
   color: $color-text-title;
+  text-align: left;
+  width: 90px;
+  margin: 0 0 13px;
 }
 
 .card__description {
@@ -31,11 +59,36 @@
   line-height: 16px;
   text-transform: none;
   color: $paragraph-light;
+  width: 142px;
+}
+
+.description__cell {
+  padding: 0;
+  text-align: left;
+}
+
+.description__cell:last-child {
+  text-align: right;
+}
+
+.card__all {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card__icon {
+  padding-top: 25px;
+  margin-bottom: 25px;
 }
 
 .card {
   .card__title {
     &--add {
+      margin: 0 0 8px;
+      width: 204px;
       color: $accent-text;
     }
   }
@@ -43,6 +96,7 @@
 
 .card__text {
   &--add {
+    margin: 0 0 21px;
     font-family: "Arial", sans-serif;
     font-style: normal;
     font-size: 12px;
@@ -50,6 +104,11 @@
     text-transform: none;
     color: $paragraph-light;
   }
+}
+
+.card__button {
+  margin-bottom: 30px;
+  width: 100%;
 }
 
 .button {

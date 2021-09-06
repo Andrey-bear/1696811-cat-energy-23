@@ -1,10 +1,28 @@
+.additional-catalog::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 50%;
+  height: 2px;
+  top: 2090px;
+  right: 0;
+  background-color: $color-bottom;
+}
+
 .additional-catalog__title {
+  width: 245px;
+  margin: 0 0 30px;
   font-style: normal;
   font-size: 24px;
   line-height: 24px;
+  text-align: left;
+  text-transform: none;
+  background-color: $main-background;
 }
 
 .additional-catalog__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 

@@ -109,18 +109,6 @@
     background: none;
   }
 
-  .before-after::before {
-    content: "";
-    position: absolute;
-    top: 2900px;
-    left: 0;
-    right: 0;
-    height: 480px;
-    width: 100%;
-    background: $background-light;
-    z-index: -1;
-  }
-
   .before-after__result {
     margin: 0 0 60px;
     font-style: normal;
@@ -146,6 +134,18 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3070px;
+      left: 0;
+      right: 0;
+      height: 440px;
+      width: 100%;
+      background: $background-light;
+      z-index: -1;
+    }
   }
 
   .before-after__item {
@@ -197,7 +197,7 @@
   .before-after::before {
     content: "";
     position: absolute;
-    top: 1875px;
+    top: 1940px;
     left: 0;
     right: 0;
     height: 405px;
